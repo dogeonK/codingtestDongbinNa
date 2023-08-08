@@ -1,7 +1,7 @@
 # 특정 원소가 속한 집합 찾기
 def find_parent(parent, x):
     # 루트 노드 찾을 때까지 재귀 호출
-    if parent[x]!= x:
+    if parent[x]!= x:   # 부모 노드 != 자신 => 루트 노드가 아님
         return find_parent(parent, parent[x])
     return parent[x]
 
